@@ -1,0 +1,60 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPoQUf+tZK+dO21Bjkj8y8z",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/YW-Kai/ComSci1_Q4/blob/main/Max_Number_Thing\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "1olBGKrPiHyF"
+      },
+      "outputs": [],
+      "source": [
+        "#Inputting the numbers\n",
+        "num1 = float(input(\"Enter your 1st number: \"))\n",
+        "num2 = float(input(\"Enter your 2nd number: \"))\n",
+        "num3 = float(input(\"Enter your 3rd number: \"))\n",
+        "\n",
+        "#Comparing the numbers\n",
+        "if num1 > num2 and num1 > num3:\n",
+        "  print(num1, \"is greater than\", num2, \"and\", num3)\n",
+        "elif num2 > num1 and num2 > num3:\n",
+        "  print(num2, \"is greater than\", num1, \"and\", num3)\n",
+        "elif num3 > num1 and num3 > num2:\n",
+        "  print(num3, \"is greater than\", num1, \"and\", num2)\n",
+        "elif num1 == num2 and num1 > num3:\n",
+        "  print(num1, \"and\", num2, \"are greater than\", num3)\n",
+        "elif num1 == num3 and num3 > num2:\n",
+        "  print(num1, \"and\", num3, \"are greater than\", num2)\n",
+        "elif num2 == num3 and num2 > num1:\n",
+        "  print(num2, \"and\", num3, \"are greater than\", num1)\n",
+        "else:\n",
+        "  print(num1, \",\", num2, \", and\", num3, \"are equal\")\n"
+      ]
+    }
+  ]
+}
